@@ -2,51 +2,22 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-
+    background-color: #cccccc;
 }
 
 
-
-.row {
-    max-width: 500px; 
-    margin: 40px auto; 
-    padding: 20px; 
-    padding-top: 50px;
-
-}
-
-.title-form {
+footer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    color: #b11623;
     margin-top: 50px;
 }
 
 
-@media screen and (min-width: 501px){
-    /* para tablet */
-    .row {
-        max-width: 1000px; 
-        margin: 40px auto; 
-        padding: 20px; 
-        padding-top: 50px;
-    
-    }
-    
-    .title-form {
-       
-        font-size: 35px;
-        font-weight: bold;
-        margin-top: 50px;
-    }
 
 
-}
 
-@media screen and (min-width: 801px){
-    /* para pc */
-    
-}
 
 .carousel.slide{
     margin-top: 133px;

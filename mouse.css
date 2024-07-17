@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    background-color: #292c37;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.menu-icon .fas {
+    color: white;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #292c37;
+    padding: 24px;
+}
+
+.nav-links li {
+    margin: 10px;
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    color: #b11623;
+    border-color: #b11623;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #9f111b;
+}
+
+/* Estilos generales para las cards */
+.card {
+    margin: 20px; /* espacio entre las cards */
+    text-align: center;
+    background-color: #cccccc;
+}
+
+.container-card {
+    margin-left: 100px;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #b11623;
+    margin-top: 50px;
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 501px) {
+    /* para tablet */
+   .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   .card {
+        width: 80%; /* ancho relativo */
+        margin: 20px auto; /* centrado */
+    }
+  
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: black;
+        margin-top: 50px;
+    }
+
+    
+}
+
+@media screen and (max-width: 991px) {
+    /* para pc */
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   .card {
+        width: calc(20% - 40px); /* ancho relativo con espacio entre cards */
+        margin: 20px; /* espacio entre cards */
+        display: inline-block; /* para que se ajusten horizontalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #b11623;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* para pc */
+   .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   .card {
+        width: calc(20% - 40px); /* ancho relativo con espacio entre cards */
+        margin: 20px; /* espacio entre cards */
+        display: inline-block; /* para que se ajusten horizontalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #b11623;
+        margin-top: 50px;
+    }
+}
