@@ -403,7 +403,7 @@ h3{
 }
 
 .card:hover{
-    transform: scale(1.05);
+    transform:  scale(1.05);
 }
 .container-card {
     margin-left: 100px;
