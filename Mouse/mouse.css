@@ -30,6 +30,11 @@ body {
     border-color: transparent;
 }
 
+.dropdown-item:hover{
+    background-color: #9f111a3a;
+}
+
+
 .card-title {
     color: rgb(165, 163, 163);
     font-size: 25px;
