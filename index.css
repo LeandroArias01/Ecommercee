@@ -9,17 +9,57 @@ body{
     background-color: #cccccc;
 }
 
+.navbar-brand {
+    color: #292c37;
+    font-size: 2rem;
+}
 
-footer {
+.d-flex {
+    color: #292c37;
+}
+.nav-item {
+    font-size: 24px;
+}
+.dropdown-item {
+    font-size: 20px;
+    color: #9f111b;
+}
+
+.footer-icons {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #b11623;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redes {
+    text-align: left;
 }
 
 
 
+
+@media screen and (max-width: 991px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
 
 
 
