@@ -14,6 +14,8 @@ body{
     font-size: 24px;
 }
 
+
+
 .dropdown-item {
     font-size: 20px;
 }
@@ -34,6 +36,36 @@ body{
     background-color: #9f111a3a;
 }
 
+.fa-solid.fa-house{
+    color: #ff0000;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.fa-solid.fa-house:hover{
+color: rgb(151, 17, 17);
+}
+
+.nav-item.dropdown{
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+.fa-solid.fa-cart-shopping{
+    color: rgb(0, 255, 0);
+    position: absolute;
+    left: 78%;
+    top: 33%;
+}
+
+.fa-solid.fa-cart-shopping:hover{
+    color: rgb(32, 175, 32);
+}
+
+a.nav-link.dropdown-toogle:hover, .nav-link:hover{
+    color: white;
+}
 
 @media screen and (max-width: 991px) {
     footer {
