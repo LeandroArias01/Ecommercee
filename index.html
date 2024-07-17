@@ -11,54 +11,69 @@
 </head>
 <body> 
     <header>
-        <nav class="navbar">
-            <h1>Ecommerce</h1>
-            <ul>
-                <li><a href="index.html">Incio</a></li>
-                <li><a href="/Mouse/mouse.html">Mouse</a></li>
-                <li><a href="/Teclado/teclado.html">Teclado</a></li>
-                <li><a href="/Auriculares/auriculares.html">Auriculares y Microfononos</a></li>
-                <li><a href="/Mousepad/mousepad.html">MousePad</a></li>
-                <li><a href="/Monitor/monitor.html">Monitor</a></li>
-                <li><a href="/Joystick/joystick.html">Joystick</a></li>
-                <li><a href="/Formulario/form.html">Agregar Productos</a></li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Gamer's Edge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../Mouse/mouse.html">Mouse</a></li>
+                    <li><a class="dropdown-item" href="../Teclado/teclado.html">Teclado</a></li>
+                    <li><a class="dropdown-item" href="../Auriculares/auriculares.html">Auriculares</a></li>
+                    <li><a class="dropdown-item" href="../Mousepad/mousepad.html">Mouse Pad</a></li>
+                    <li><a class="dropdown-item" href="../Joystick/joystick.html">Joystick</a></li>
+                    <li><a class="dropdown-item" href="../Monitor/monitor.html">Monitor</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Formulario/form.html">Agregar productos</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
         </nav>
     </header>
-
-
-    <div id="carousel-items" class="carousel slide">
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carousel-items" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carousel-items" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carousel-items" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/IMAGENES-PROYECTO/carousel-joystick.jpg" class="d-block w-100" alt="Joystick Xbox">
+        </div>
+        <div class="carousel-item">
+            <img src="/IMAGENES-PROYECTO/carousel-teclado.jpg" class="d-block w-100" alt="Teclado RGB">
+        </div>
+        <div class="carousel-item">
+            <img src="/IMAGENES-PROYECTO/carousel-auriculares.jpg" class="d-block w-100" alt="Auriculares">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-inner">
-    <div class="carousel-item active">
-        <img src="IMAGENES-PROYECTO/JOYSTICK.jpg" class="Item-Joystick" alt="Joystick Xbox">
-    </div>
-    <div class="carousel-item">
-        <img src="IMAGENES-PROYECTO/teclado.jpg" class="Item-Teclado" alt="Teclado RGB">
-    </div>
-    <div class="carousel-item">
-        <img src="IMAGENES-PROYECTO/auriculares.jpg" class="Item-Auriculares" alt="Auriculares">
-    </div>
-    </div>
-    <div class="arrows">
-    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-items" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carousel-items" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-    </button>
-    </div>
-</div>
-
-
-
     <footer>
         <p>Copyright &copy; 2024 - Todos los derechos reservados</p>
 </footer>

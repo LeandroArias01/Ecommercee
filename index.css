@@ -6,23 +6,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #cccccc;
-}
-
-.navbar-brand {
-    color: #292c37;
-    font-size: 2rem;
-}
-
-.d-flex {
-    color: #292c37;
-}
-.nav-item {
-    font-size: 24px;
-}
-.dropdown-item {
-    font-size: 20px;
-    color: #9f111b;
+    background-color: #292c37;
 }
 
 .footer-icons {
@@ -36,9 +20,6 @@ body{
 .redes {
     text-align: left;
 }
-
-
-
 
 @media screen and (max-width: 991px) {
     footer {
@@ -60,8 +41,6 @@ body{
         margin-top: 50px;
     }
 }
-
-
 
 .carousel.slide{
     margin-top: 133px;
@@ -101,12 +80,24 @@ button.carousel-control-prev:hover{
     border-top-right-radius: 300px;
 }
 
+div.carousel-indicators{
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+}
+
+.bt1:hover, .bt2:hover, .bt3:hover{
+    background-color: #696969;
+}
+
 span.carousel-control-next-icon{
     margin-left: 40px;
+    background-color: transparent;
 }
 
 span.carousel-control-prev-icon{
     margin-right: 40px;
+    background-color: transparent;
 }
 
 span.carousel-control-next-icon:hover{
