@@ -33,11 +33,16 @@ body {
     border-color: transparent;
 }
 
+.btn.btn-outline-success:active{
+    background-color: #64080e;
+    outline: none;
+    border: none;
+}
+
 .dropdown-item:hover{
     background-color: #9f111a3a;
 }
 
-<<<<<<< HEAD
 .fa-solid.fa-house{
     color: #ff0000;
     margin-left: 40px;
@@ -68,8 +73,6 @@ color: rgb(151, 17, 17);
 a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: white;
 }
-=======
->>>>>>> 2860ea05d140d281e7f44b1dcfe658281a9c0d60
 
 .card-title {
     color: rgb(165, 163, 163);

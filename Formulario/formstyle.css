@@ -11,8 +11,6 @@ body{
     font-size: 24px;
 }
 
-
-
 .dropdown-item {
     font-size: 20px;
 }
@@ -27,6 +25,12 @@ body{
     color: #fff;
     background-color: #921018;
     border-color: transparent;
+}
+
+.btn.btn-outline-success:active{
+    background-color: #64080e;
+    outline: none;
+    border: none;
 }
 
 .dropdown-item:hover{
@@ -73,7 +77,7 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     border-radius: 20px;
     box-shadow: 0 0 50px 22px #000000;
     position: absolute;
-    right: 20% ;
+    right: 25% ;
 }
 
 h1{

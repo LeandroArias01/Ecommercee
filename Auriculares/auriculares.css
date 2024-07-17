@@ -30,6 +30,12 @@ body {
     border-color: transparent;
 }
 
+.btn.btn-outline-success:active{
+    background-color: #64080e;
+    outline: none;
+    border: none;
+}
+
 .dropdown-item:hover{
     background-color: #9f111a3a;
 }

@@ -15,11 +15,8 @@ body {
     font-size: 24px;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 2860ea05d140d281e7f44b1dcfe658281a9c0d60
 .dropdown-item {
     font-size: 20px;
 }
@@ -34,6 +31,12 @@ body {
     color: #fff;
     background-color: #921018;
     border-color: transparent;
+}
+
+.btn.btn-outline-success:active{
+    background-color: #64080e;
+    outline: none;
+    border: none;
 }
 
 .dropdown-item:hover{

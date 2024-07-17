@@ -14,8 +14,8 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
-  }
-  
+}
+
 
 .redes {
     text-align: left;
@@ -51,23 +51,27 @@ body{
     color: rgb(206, 206, 206);
 }
 
+div.contactanos{
+    margin-right: 60px;
+}
+
 .contacto-footer {
     text-align: right; /* Alinea el texto a la derecha */
     margin-bottom: 20px; /* Agrega espacio entre el texto y los enlaces */
-  }
-  
-  .contact-link {
+}
+
+.contact-link {
     display: block; /* Crea un bloque para cada enlace */
     margin-bottom: 10px; /* Agrega espacio entre los enlaces */
     text-align: right; /* Alinea los enlaces a la derecha */
-  }
-  
-  .contact-link:last-child {
-    margin-bottom: 0; /* Quita el margen inferior del último enlace */
-  }
+}
 
-.contact-link i {
-    margin-right: 10px;
+.contact-link:last-child {
+    margin-bottom: 0; /* Quita el margen inferior del último enlace */
+}
+
+.contact-link {
+    text-align: start;
 }
 
 
@@ -118,24 +122,31 @@ body{
 }
 
 .footer-title {
-    display: flex;
+    text-align: center;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-size: 45px;
     font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 80px;
-
 }
 
 .h1-footer {
-    display: flex;
+    text-align: center;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-size: 45px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 80px;
+}
+
+p.parrafo-footer{
+    text-decoration: none;
+    margin-top: 70px;
+    position: absolute;
+    bottom: -90%;
+    left: 40%;
 }
 
 footer {
@@ -145,13 +156,15 @@ footer {
     text-align: center;
     color: rgb(165, 163, 163);
     padding: 50px;
+}
 
-
+.fa-brands.fa-whatsapp, .fa-regular.fa-envelope{
+margin-right: 10px;
 }
 
 @media screen and (max-width: 501px) {
     /* para tablet */
-   
+
     footer {
         display: flex;
         flex-direction: column;
@@ -203,8 +216,6 @@ footer {
     font-size: 24px;
 }
 
-
-
 .dropdown-item {
     font-size: 20px;
 }
@@ -219,6 +230,12 @@ footer {
     color: #fff;
     background-color: #921018;
     border-color: transparent;
+}
+
+.btn.btn-outline-success:active{
+    background-color: #64080e;
+    outline: none;
+    border: none;
 }
 
 .dropdown-item:hover{
