@@ -214,15 +214,7 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     margin-bottom: 80px;
 }
 
-p.parrafo-footer{
-    text-align: center;
-    height: 0%;
-    text-decoration: none;
-    margin-top: 70px;
-    position: absolute;
-    top: 490%;
-    left: 36%;
-}
+
 
 footer {
     /* position: absolute;
