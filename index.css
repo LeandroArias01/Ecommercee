@@ -60,6 +60,7 @@
 button.carousel-control-next{
     margin-right: 200px;
     width: 120px;
+    height: 600px;
     transition: background-color;
     transition-duration: 0.4s;
     border-bottom-left-radius: 300px;
@@ -69,6 +70,7 @@ button.carousel-control-next{
 button.carousel-control-prev{
     margin-left: 200px;
     width: 120px;
+    height: 600px;
     transition: background-color;
     transition-duration: 0.4s;
     border-bottom-right-radius: 300px;
