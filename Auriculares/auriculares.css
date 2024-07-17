@@ -1,9 +1,32 @@
 body {
     background-color: #292c37;
 }
-.navbar-brand {
-    color: #292c37;
-    font-size: 2rem;
+.nav-item {
+    font-size: 24px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #9f111b;
+    color: white;
+    border-color: #b11623;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #921018;
+    border-color: transparent;
+}
+
+.dropdown-item:hover{
+    background-color: #9f111a3a;
 }
 
 .d-flex {
@@ -28,6 +51,40 @@ body {
     background-color: #921018;
 }
 
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    text-align: center;
+    color: rgb(165, 163, 163);
+    margin: 50px;
+}
+
+/* Estilos generales para las cards */
+.card {
+    margin: 20px; /* espacio entre las cards */
+    text-align: center;
+    background-color: #292c37;
+    color: black;
+    border-radius: 5px ;
+    border: 1px solid #b11623;
+    box-shadow: 0 0 50px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.container-card {
+    margin-left: 100px;
+}
+
 .card-title {
     color: rgb(165, 163, 163);
     font-size: 25px;
@@ -38,14 +95,81 @@ body {
     font-size: 20px;
 }
 
+.card-img-top{
+    height: 280px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 501px) {
+    /* para tablet */
+.container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+.card {
+        width: 80%; /* ancho relativo */
+        margin: 20px auto; /* centrado */
+    }
+.mas-cards {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* para pc */
+.container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+.card {
+        width: calc(45% - 40px); /* ancho relativo con espacio entre cards */
+        margin: 20px; /* espacio entre cards */
+        display: inline-block; /* para que se ajusten horizontalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* para pc */
+.container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+.card {
+        width: calc(20% - 40px); /* ancho relativo con espacio entre cards */
+        margin: 20px; /* espacio entre cards */
+        display: inline-block; /* para que se ajusten horizontalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
 
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 
 .redes {
     text-align: left;
@@ -72,6 +196,8 @@ body {
     margin-bottom: 10px;
 }
 
+
+
 .contact-link {
     display: block;
     margin-bottom: 10px;
@@ -82,6 +208,7 @@ body {
 .contact-link i {
     margin-right: 10px;
 }
+
 #git {
     color: white;
     font-size: 25px;
@@ -125,92 +252,4 @@ body {
 
 #ig:hover {
     color: #fd1d1d;
-}
-
-
-
-footer {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    text-align: center;
-    color: rgb(165, 163, 163);
-    margin: 50px;
-}
-/* Estilos generales para las cards */
-.card {
-    margin: 20px; /* espacio entre las cards */
-    text-align: center;
-    background-color: #292c37;
-    color: black;
-    border-radius: 5px ;
-    border: 1px solid #b11623;
-    box-shadow: 0 0 50px #000;
-}
-
-.container-card {
-    margin-left: 100px;
-}
-
-/* Media queries */
-@media screen and (max-width: 501px) {
-    /* para tablet */
-   .container-card {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-   .card {
-        width: 80%; /* ancho relativo */
-        margin: 20px auto; /* centrado */
-    }
-   .mas-cards {
-        display: none;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);;
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    /* para pc */
-   .container-card {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-   .card {
-        width: calc(45% - 40px); /* ancho relativo con espacio entre cards */
-        margin: 20px; /* espacio entre cards */
-        display: inline-block; /* para que se ajusten horizontalmente */
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);;
-        margin-top: 50px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    /* para pc */
-   .container-card {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-   .card {
-        width: calc(20% - 40px); /* ancho relativo con espacio entre cards */
-        margin: 20px; /* espacio entre cards */
-        display: inline-block; /* para que se ajusten horizontalmente */
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
 }

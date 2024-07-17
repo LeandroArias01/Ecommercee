@@ -9,6 +9,7 @@ body{
     background-color: #292c37;
 }
 
+<<<<<<< HEAD
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
@@ -198,6 +199,33 @@ footer {
         margin: 0 auto; /* Centra los enlaces de contacto */
     }
 }
+=======
+/* NAVBAR */
+.nav-item {
+    font-size: 24px;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #9f111b;
+    color: white;
+    border-color: #b11623;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #921018;
+    border-color: transparent;
+}
+
+.dropdown-item:hover{
+    background-color: #9f111a3a;
+}
+
+>>>>>>> c9df07417773f78419aff37a50c842de5a7e8c3d
 
 @media screen and (max-width: 991px) {
     footer {
@@ -220,15 +248,17 @@ footer {
     }
 }
 
+/* CAROUSEL */
 .carousel.slide{
-    margin-top: 133px;
-    padding-left: 200px;
-    padding-right: 200px;
+    width: 90%;
+    margin-top: 70px;
+    margin-right: 190px;
+    margin-left: 100px;
+    box-shadow: 0 0 50px 10px #000000;
 }
 
 button.carousel-control-next{
-    margin-right: 200px;
-    width: 120px;
+    width: 10%;
     height: 600px;
     transition: background-color;
     transition-duration: 0.4s;
@@ -237,8 +267,7 @@ button.carousel-control-next{
 }
 
 button.carousel-control-prev{
-    margin-left: 200px;
-    width: 120px;
+    width: 10%;
     height: 600px;
     transition: background-color;
     transition-duration: 0.4s;
@@ -264,10 +293,6 @@ div.carousel-indicators{
     top: 100%;
 }
 
-.bt1:hover, .bt2:hover, .bt3:hover{
-    background-color: #696969;
-}
-
 span.carousel-control-next-icon{
     margin-left: 40px;
     background-color: transparent;
@@ -286,7 +311,7 @@ span.carousel-control-next-icon:hover{
 span.carousel-control-prev-icon:hover{
     background-color: #00000030;
     border-radius: 20px;
-
+    
 }
 
 img{
@@ -307,4 +332,64 @@ img{
 .carousel-item{
     box-shadow: 20px 20px 50px 5px #000000;
     border-radius: 10px;
+}
+
+
+/* DESTACADOS */
+h3{
+    text-align: center;
+    color: #cccccc;
+    text-shadow: #000000;
+    font-size: 40px;
+}
+
+.card-title {
+    color: rgb(165, 163, 163);
+    font-size: 25px;
+}
+
+.card-text {
+    color: rgb(165, 163, 163);
+    font-size: 20px;
+}
+.card {
+    margin: 20px; /* espacio entre las cards */
+    text-align: center;
+    background-color: #292c37;
+    color: black;
+    border-radius: 5px ;
+    border: 1px solid #b11623;
+    box-shadow: 0 0 50px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+.container-card {
+    margin-left: 100px;
+}
+
+.card-img-top{
+    height: 280px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redes {
+    text-align: left;
 }

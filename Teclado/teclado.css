@@ -1,9 +1,9 @@
 body {
     background-color: #292c37;
 }
-.navbar-brand {
-    color: #292c37;
-    font-size: 2rem;
+
+* {
+    font-family: sans-serif;
 }
 
 .d-flex {
@@ -15,8 +15,8 @@ body {
 }
 .dropdown-item {
     font-size: 20px;
-    color: #9f111b;
 }
+
 .btn {
     background-color: #9f111b;
     color: white;
@@ -26,6 +26,11 @@ body {
 .btn:hover {
     color: #fff;
     background-color: #921018;
+    border-color: transparent;
+}
+
+.dropdown-item:hover{
+    background-color: #9f111a3a;
 }
 
 .card-title {
