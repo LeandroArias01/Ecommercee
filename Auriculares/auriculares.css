@@ -102,39 +102,6 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: white;
 }
 
-
-
-
-footer {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    text-align: center;
-    color: rgb(165, 163, 163);
-    margin: 50px;
-}
-
-/* Estilos generales para las cards */
-.card {
-    margin: 20px; /* espacio entre las cards */
-    text-align: center;
-    background-color: #292c37;
-    color: black;
-    border-radius: 5px ;
-    border: 1px solid #b11623;
-    box-shadow: 0 0 50px #000;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s;
-}
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-.container-card {
-    margin-left: 100px;
-}
-
 .card-title {
     color: rgb(165, 163, 163);
     font-size: 25px;
@@ -150,9 +117,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: start;
-  }
-  
+    align-items: center;
+}
 
 .redes {
     text-align: left;
