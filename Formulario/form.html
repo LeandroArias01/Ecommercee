@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Gamer's Edge</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,13 +28,12 @@
                     Productos
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mouse</a></li>
-                    <li><a class="dropdown-item" href="#">Teclado</a></li>
-                    <li><a class="dropdown-item" href="#">Auriculares</a></li>
-                    <li><a class="dropdown-item" href="#">Microfono</a></li>
-                    <li><a class="dropdown-item" href="#">Mouse Pad</a></li>
-                    <li><a class="dropdown-item" href="#">Joystick</a></li>
-                    <li><a class="dropdown-item" href="#">Monitor</a></li>
+                    <li><a class="dropdown-item" href="../Mouse/mouse.html">Mouse</a></li>
+                    <li><a class="dropdown-item" href="../Teclado/teclado.html">Teclado</a></li>
+                    <li><a class="dropdown-item" href="../Auriculares/auriculares.html">Auriculares</a></li>
+                    <li><a class="dropdown-item" href="../Mousepad/mousepad.html">Mouse Pad</a></li>
+                    <li><a class="dropdown-item" href="../Joystick/joystick.html">Joystick</a></li>
+                    <li><a class="dropdown-item" href="../Monitor/monitor.html">Monitor</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -53,20 +52,16 @@
     <div class="form-container">
     <h1 class="title-form">AGREGAR PRODUCTOS</h1>
     <form class="form-add">
-        <!-- <div class="product"> -->
-            <label for="product">Producto</label>
-            <input type="text" class="product-name" id="product" required>
-        <!-- </div> -->
+            <label class="productL" for="product">Producto</label>
+            <input type="text" class="product-name" id="product" placeholder="Ej: Teclado AlloyFPS" required>
         
-        <!-- <div class="brand"> -->
             <label class="brandL" for="brand">Marca</label>
-            <input type="text" class="brandI" id="brand" required>
-        <!-- </div> -->
-        <!-- <div class="price"> -->
+            <input type="text" class="brandI" id="brand" placeholder="Ej: HyperX" required>
             <label class="priceL" for="price">Precio</label>
-            <input type="number" class="priceI" id="price" required>
-        <!-- </div> -->
-        <!-- <div class="category"> -->
+            <input type="number" class="priceI" id="price" placeholder="Ej: $100.000" required>
+            <label class="stockL" for="stock">Stock Disponible</label>
+            <input type="number" class="stockI" id="stock" placeholder="Ej: 100u">
+
             <label for="validationCustom04" class="categoryL">Categoria</label>
         <div class="select-category">    
             <select class="categories" name="Categorias">
@@ -80,7 +75,6 @@
                 </select>
             </select>
         </div>
-        <!-- </div> -->
         <div class="sumbit">
             <button class="sumbitB" type="submit">Agregar Producto</button>
         </div>
