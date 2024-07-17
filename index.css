@@ -30,123 +30,14 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 
 .redes {
     text-align: left;
 }
 
 
-.redes-footer {
-    margin-bottom: 10px;
-    
-}
-
-.social-link {
-    display: block;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(206, 206, 206);
-}
-
-.social-link i {
-    margin-right: 10px;
-}
-
-.contacto-footer {
-    margin-bottom: 10px;
-}
-
-.contact-link {
-    display: block;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(206, 206, 206);
-}
-
-.contact-link i {
-    margin-right: 10px;
-}
-#git {
-    color: white;
-    font-size: 25px;
-}
-
-#mail{
-    color: white;
-    font-size: 25px;
-}
-
-#wh{
-    color: white;
-    font-size: 25px;
-}
-
-#li{
-    color: white;
-    font-size: 25px;
-}
-
-#ig {
-    color: white;
-    font-size: 25px;
-}
-
-#git:hover {
-    color: #4078c0;
-}
-
-#mail:hover{
-    color: #ea4335;
-}
-
-#wh:hover{
-    color: #25d366;
-}
-
-#li:hover{
-    color: #0a66c2;
-}
-
-#ig:hover {
-    color: #fd1d1d;
-}
-
-
-
-footer {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    text-align: center;
-    color: rgb(165, 163, 163);
-    margin: 50px;
-}
-@media screen and (min-width: 501px){
-    /* para tablet */
-    .row {
-        max-width: 1000px; 
-        margin: 40px auto; 
-        padding: 20px; 
-        padding-top: 50px;
-    
-    }
-    
-    .title-form {
-    
-        font-size: 35px;
-        font-weight: bold;
-        margin-top: 50px;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
-}
 
 
 @media screen and (max-width: 991px) {
