@@ -15,8 +15,8 @@ body {
 }
 .dropdown-item {
     font-size: 20px;
-    color: #9f111b;
 }
+
 .btn {
     background-color: #9f111b;
     color: white;
@@ -26,6 +26,11 @@ body {
 .btn:hover {
     color: #fff;
     background-color: #921018;
+    border-color: transparent;
+}
+
+.dropdown-item:hover{
+    background-color: #9f111a3a;
 }
 
 .card-title {
@@ -44,8 +49,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 
 .redes {
     text-align: left;
@@ -149,10 +154,12 @@ footer {
     border-radius: 5px ;
     border: 1px solid #b11623;
     box-shadow: 0 0 50px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
 }
 
-.card .btn {
-
+.card:hover{
+    transform: scale(1.05);
 }
 
 
