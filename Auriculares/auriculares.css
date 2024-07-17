@@ -242,13 +242,13 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
 }
 
 p.parrafo-footer{
-    height: 10%;
+    text-align: center;
+    height: 0%;
     text-decoration: none;
     margin-top: 70px;
     position: absolute;
-    top: 70%;
+    top: 490%;
     left: 36%;
-
 }
 
 footer {
