@@ -1,3 +1,7 @@
+body{
+    background-color: #292c37;
+}
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -15,6 +19,25 @@ footer {
 }
 
 
+<<<<<<< HEAD
+=======
+@media screen and (min-width: 501px){
+    /* para tablet */
+    .row {
+        max-width: 1000px; 
+        margin: 40px auto; 
+        padding: 20px; 
+        padding-top: 50px;
+    
+    }
+    
+    .title-form {
+    
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+>>>>>>> 82723b11e168239b6901b4107cdca440100e6f88
 
 
 
