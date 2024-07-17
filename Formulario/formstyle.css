@@ -280,9 +280,9 @@ p.parrafo-footer{
 }
 
 footer {
-    position: absolute;
+    /* position: absolute;
     height: 40%;
-    top: 195%;
+    top: 195%; */
     width: 100%;
     display: flex;
     flex-direction: row; 
