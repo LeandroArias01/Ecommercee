@@ -24,11 +24,28 @@
 
 
 @media screen and (min-width: 501px){
-    /*para mobil */
+    /* para movil */
+    .card-container{
+
+    }
 
 
 }
 
 @media screen and (min-width: 801px){
     /* para pc */
+    .row {
+        max-width: 500px; 
+        margin: 40px auto; 
+        padding: 20px; 
+        padding-top: 50px;
+    
+      }
+    
+    .title-form {
+       
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
 }
