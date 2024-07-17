@@ -37,6 +37,7 @@ body {
     background-color: #9f111a3a;
 }
 
+<<<<<<< HEAD
 .fa-solid.fa-house{
     color: #ff0000;
     margin-left: 40px;
@@ -67,6 +68,8 @@ color: rgb(151, 17, 17);
 a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: white;
 }
+=======
+>>>>>>> 2860ea05d140d281e7f44b1dcfe658281a9c0d60
 
 .card-title {
     color: rgb(165, 163, 163);
@@ -83,9 +86,9 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-}
-
+    align-items: start;
+  }
+  
 
 .redes {
     text-align: left;
@@ -93,8 +96,12 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
 
 
 .redes-footer {
-    margin-bottom: 10px;
-    
+    display: flex;
+    align-items: start;
+}
+
+#contacto {
+
 }
 
 .social-link {
@@ -112,16 +119,30 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     margin-bottom: 10px;
 }
 
-.contact-link {
-    display: block;
-    margin-bottom: 10px;
+.contactanos a {
     text-decoration: none;
     color: rgb(206, 206, 206);
 }
 
+.contacto-footer {
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-bottom: 20px; /* Agrega espacio entre el texto y los enlaces */
+  }
+  
+  .contact-link {
+    display: block; /* Crea un bloque para cada enlace */
+    margin-bottom: 10px; /* Agrega espacio entre los enlaces */
+    text-align: right; /* Alinea los enlaces a la derecha */
+  }
+  
+  .contact-link:last-child {
+    margin-bottom: 0; /* Quita el margen inferior del último enlace */
+  }
+
 .contact-link i {
     margin-right: 10px;
 }
+
 
 #git {
     color: white;
@@ -136,6 +157,7 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
 #wh{
     color: white;
     font-size: 25px;
+    
 }
 
 #li{
@@ -168,7 +190,26 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: #fd1d1d;
 }
 
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 80px;
 
+}
+
+.h1-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
 
 footer {
     display: flex;
@@ -176,8 +217,12 @@ footer {
     justify-content: space-between; 
     text-align: center;
     color: rgb(165, 163, 163);
-    margin: 50px;
+    padding: 50px;
+
+
 }
+
+
 
 
 /* Estilos generales para las cards */
@@ -197,7 +242,9 @@ footer {
     transform: scale(1.05);
 }
 
-
+#contacto {
+    background-color: #1b1d24;
+}
 
 .container-card {
     margin-left: 100px;
@@ -224,6 +271,54 @@ footer {
         color: rgb(165, 163, 163);
         margin-top: 50px;
     }
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1-footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    /* para tablet */
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center; /* Centra los elementos */
+    }
+    .card {
+        width: 80%; /* Ancho relativo */
+        margin: 20px auto; /* Centrado */
+        display: block; /* Para que se ajusten verticalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1-footer {
+        display: none;
+    }
+    .footer-icons {
+        justify-content: center; /* Centra los iconos */
+    }
+    .social-link {
+        margin: 0 auto; /* Centra los enlaces sociales */
+    }
+    .contact-link {
+        margin: 0 auto; /* Centra los enlaces de contacto */
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -244,6 +339,7 @@ footer {
         color: rgb(165, 163, 163);
         margin-top: 50px;
     }
+
 }
 
 @media screen and (min-width: 992px) {

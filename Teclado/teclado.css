@@ -78,11 +78,15 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     font-size: 20px;
 }
 
+
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+    align-items: start;{
 }
 
 
@@ -92,8 +96,12 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
 
 
 .redes-footer {
-    margin-bottom: 10px;
-    
+    display: flex;
+    align-items: start;
+}
+
+#contacto {
+
 }
 
 .social-link {
@@ -111,16 +119,30 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     margin-bottom: 10px;
 }
 
-.contact-link {
-    display: block;
-    margin-bottom: 10px;
+.contactanos a {
     text-decoration: none;
     color: rgb(206, 206, 206);
 }
 
+.contacto-footer {
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-bottom: 20px; /* Agrega espacio entre el texto y los enlaces */
+  }
+  
+  .contact-link {
+    display: block; /* Crea un bloque para cada enlace */
+    margin-bottom: 10px; /* Agrega espacio entre los enlaces */
+    text-align: right; /* Alinea los enlaces a la derecha */
+  }
+  
+  .contact-link:last-child {
+    margin-bottom: 0; /* Quita el margen inferior del último enlace */
+  }
+
 .contact-link i {
     margin-right: 10px;
 }
+
 
 #git {
     color: white;
@@ -135,6 +157,7 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
 #wh{
     color: white;
     font-size: 25px;
+    
 }
 
 #li{
@@ -167,7 +190,26 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: #fd1d1d;
 }
 
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 80px;
 
+}
+
+.h1-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
 
 footer {
     display: flex;
@@ -175,8 +217,13 @@ footer {
     justify-content: space-between; 
     text-align: center;
     color: rgb(165, 163, 163);
-    margin: 50px;
+    padding: 50px;
+
+
 }
+
+
+
 
 /* Estilos generales para las cards */
 .card {
@@ -187,6 +234,16 @@ footer {
     border-radius: 5px ;
     border: 1px solid #b11623;
     box-shadow: 0 0 50px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+#contacto {
+    background-color: #1b1d24;
 }
 
 .container-card {
@@ -211,8 +268,56 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        color: rgb(165, 163, 163);;
+        color: rgb(165, 163, 163);
         margin-top: 50px;
+    }
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1-footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    /* para tablet */
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center; /* Centra los elementos */
+    }
+    .card {
+        width: 80%; /* Ancho relativo */
+        margin: 20px auto; /* Centrado */
+        display: block; /* Para que se ajusten verticalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1-footer {
+        display: none;
+    }
+    .footer-icons {
+        justify-content: center; /* Centra los iconos */
+    }
+    .social-link {
+        margin: 0 auto; /* Centra los enlaces sociales */
+    }
+    .contact-link {
+        margin: 0 auto; /* Centra los enlaces de contacto */
     }
 }
 
@@ -231,9 +336,10 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        color: rgb(165, 163, 163);;
+        color: rgb(165, 163, 163);
         margin-top: 50px;
     }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -251,7 +357,7 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        color: rgb(165, 163, 163);;
+        color: rgb(165, 163, 163);
         margin-top: 50px;
     }
 }
