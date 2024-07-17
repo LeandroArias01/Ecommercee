@@ -1,3 +1,7 @@
+body{
+    background-color: #292c37;
+}
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -34,7 +38,7 @@
     }
     
     .title-form {
-       
+    
         font-size: 35px;
         font-weight: bold;
         margin-top: 50px;
