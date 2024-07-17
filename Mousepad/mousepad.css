@@ -1,0 +1,225 @@
+body {
+    background-color: #292c37;
+}
+.navbar-brand {
+    color: #292c37;
+    font-size: 2rem;
+}
+
+.d-flex {
+    color: #292c37;
+}
+
+.nav-item {
+    font-size: 24px;
+}
+.dropdown-item {
+    font-size: 20px;
+    color: #9f111b;
+}
+.btn {
+    background-color: #9f111b;
+    color: white;
+    border-color: #b11623;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #921018;
+}
+
+.card-title {
+    color: rgb(165, 163, 163);
+    font-size: 25px;
+}
+
+.card-text {
+    color: rgb(165, 163, 163);
+    font-size: 20px;
+}
+
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+.redes {
+    text-align: left;
+}
+
+
+.redes-footer {
+    margin-bottom: 10px;
+    
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+
+.contacto-footer {
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+.contact-link i {
+    margin-right: 10px;
+}
+
+#git {
+    color: white;
+    font-size: 25px;
+}
+
+#mail{
+    color: white;
+    font-size: 25px;
+}
+
+#wh{
+    color: white;
+    font-size: 25px;
+}
+
+#li{
+    color: white;
+    font-size: 25px;
+}
+
+#ig {
+    color: white;
+    font-size: 25px;
+}
+
+#git:hover {
+    color: #4078c0;
+}
+
+#mail:hover{
+    color: #ea4335;
+}
+
+#wh:hover{
+    color: #25d366;
+}
+
+#li:hover{
+    color: #0a66c2;
+}
+
+#ig:hover {
+    color: #fd1d1d;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    text-align: center;
+    color: rgb(165, 163, 163);
+    margin: 50px;
+}
+
+
+/* Estilos generales para las cards */
+.card {
+    margin: 20px; /* espacio entre las cards */
+    text-align: center;
+    background-color: #292c37;
+    color: black;
+    border-radius: 5px ;
+    border: 1px solid #b11623;
+    box-shadow: 0 0 50px #000;
+}
+
+.card .btn {
+
+}
+
+
+
+.container-card {
+    margin-left: 100px;
+}
+
+/* Media queries */
+@media screen and (max-width: 501px) {
+    /* para tablet */
+   .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   .card {
+        width: 80%; /* ancho relativo */
+        margin: 20px auto; /* centrado */
+    }
+   .mas-cards {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* para pc */
+   .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   .card {
+        width: calc(45% - 40px); /* ancho relativo con espacio entre cards */
+        margin: 20px; /* espacio entre cards */
+        display: inline-block; /* para que se ajusten horizontalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* para pc */
+   .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   .card {
+        width: calc(20% - 40px); /* ancho relativo con espacio entre cards */
+        margin: 20px; /* espacio entre cards */
+        display: inline-block; /* para que se ajusten horizontalmente */
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
