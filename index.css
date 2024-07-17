@@ -365,19 +365,11 @@ img{
     height: 600px;
 }
 
-.Item-Joystick{
-    transition: all;
-    transition-duration: 1s;
-    transform: Item-Joystick;
-}
-
-.Item-Teclado{
-    transition: all;
-}
-
 .carousel-item{
     box-shadow: 20px 20px 50px 5px #000000;
     border-radius: 10px;
+    display: flex;
+    transition: transform 1s ease-in-out;
 }
 
 
