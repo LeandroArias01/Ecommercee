@@ -1,0 +1,337 @@
+body{
+    background-color: #292c37;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.redes {
+    text-align: left;
+}
+
+
+.redes-footer {
+    display: flex;
+    align-items: start;
+}
+
+#contacto {
+    background-color: #1b1d24;
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+
+.contacto-footer {
+    margin-bottom: 10px;
+}
+
+.contactanos a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+div.contactanos{
+    margin-right: 60px;
+}
+
+.contacto-footer {
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-bottom: 20px; /* Agrega espacio entre el texto y los enlaces */
+}
+
+.contact-link {
+    display: block; /* Crea un bloque para cada enlace */
+    margin-bottom: 10px; /* Agrega espacio entre los enlaces */
+    text-align: right; /* Alinea los enlaces a la derecha */
+}
+
+.contact-link:last-child {
+    margin-bottom: 0; /* Quita el margen inferior del último enlace */
+}
+
+.contact-link {
+    text-align: start;
+}
+
+
+#git {
+    color: white;
+    font-size: 25px;
+}
+
+#mail{
+    color: white;
+    font-size: 25px;
+}
+
+#wh{
+    color: white;
+    font-size: 25px;
+    
+}
+
+#li{
+    color: white;
+    font-size: 25px;
+}
+
+#ig {
+    color: white;
+    font-size: 25px;
+}
+
+#git:hover {
+    color: #4078c0;
+}
+
+#mail:hover{
+    color: #ea4335;
+}
+
+#wh:hover{
+    color: #25d366;
+}
+
+#li:hover{
+    color: #0a66c2;
+}
+
+#ig:hover {
+    color: #fd1d1d;
+}
+
+.footer-title {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.h1-footer {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+
+
+footer {
+    /* position: absolute;
+    height: 40%;
+    top: 195%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    text-align: center;
+    color: rgb(165, 163, 163);
+    padding: 50px;
+}
+
+.fa-brands.fa-whatsapp, .fa-regular.fa-envelope{
+margin-right: 10px;
+}
+
+@media screen and (max-width: 501px) {
+    /* para tablet */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1-footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1-footer {
+        display: none;
+    }
+    .footer-icons {
+        justify-content: center; /* Centra los iconos */
+    }
+    .social-link {
+        margin: 0 auto; /* Centra los enlaces sociales */
+    }
+    .contact-link {
+        margin: 0 auto; /* Centra los enlaces de contacto */
+    }
+}
+/* NAVBAR */
+.nav-item {
+    font-size: 24px;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #9f111b;
+    color: white;
+    border-color: #b11623;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #921018;
+    border-color: transparent;
+}
+
+.btn.btn-outline-success:active{
+    background-color: #64080e;
+    outline: none;
+    border: none;
+}
+
+.dropdown-item:hover{
+    background-color: #9f111a3a;
+}
+
+.fa-solid.fa-house{
+    color: #ff0000;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.fa-solid.fa-house:hover{
+color: rgb(151, 17, 17);
+}
+
+.nav-item.dropdown{
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+.fa-solid.fa-cart-shopping{
+    color: rgb(0, 255, 0);
+    position: absolute;
+    left: 70%;
+    top: 33%;
+}
+
+.fa-solid.fa-cart-shopping:hover{
+    color: rgb(32, 175, 32);
+}
+
+a.nav-link.dropdown-toogle:hover, .nav-link:hover{
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:501px){
+    div.cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:773px){
+    div.cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:992px){
+    div.cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redes {
+    text-align: left;
+}

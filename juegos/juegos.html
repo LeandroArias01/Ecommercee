@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="formstyle.css">
-    <title>Agregar Productos</title>
+    <title>Juegos</title>
+    <link rel="stylesheet" href="/juegos/juegos.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Gamer's Edge</a>
+            <a class="navbar-brand" href="/index.html">Gamer's Edge</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,6 +40,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/Formulario/form.html">Agregar productos</a>
                 </li>
+                
 
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -54,39 +55,34 @@
             </div>
         </nav>
     </header>
-    <br>
-    <div class="form-container">
-    <h1 class="title-form">AGREGAR PRODUCTOS</h1>
-    <form class="form-add">
-            <label class="productL" for="product">Producto</label>
-            <input type="text" class="product-name" id="product" placeholder="Ej: Teclado AlloyFPS" required>
+
+    <main>
         
-            <label class="brandL" for="brand">Marca</label>
-            <input type="text" class="brandI" id="brand" placeholder="Ej: HyperX" required>
-            <label class="priceL" for="price">Precio</label>
-            <input type="number" class="priceI" id="price" placeholder="Ej: $100.000" required>
-            <label class="stockL" for="stock">Stock Disponible</label>
-            <input type="number" class="stockI" id="stock" placeholder="Ej: 100u">
+    </main>
 
-            <label for="validationCustom04" class="categoryL">Categoria</label>
-        <div class="select-category">    
-            <select class="categories" name="Categorias">
-                <option selected disabled class="selectDis">Seleccionar categoría</option>
-                <option value="Mouse">Mouse</option>
-                <option value="Teclado">Teclado</option>
-                <option value="Auriculares">Auriculares</option>
-                <option value="Mouse Pad">Mouse Pad</option>
-                <option value="Joystick">Joystick</option>
-                <option value="Monitor">Monitor</option>
-                </select>
-            </select>
-        </div>
-        <div class="sumbit">
-            <button class="sumbitB" type="submit">Agregar Producto</button>
-        </div>
-        </form>
-    </div>
 
+    <footer id="contacto">
+        <h1 class="footer-title">Acerca de Nosotros</h1>
     
+    <div class="footer-icons">
+        <div class="redes">
+            <h1 class="redes-footer">Redes Sociales</h1>
+            <a href="" class="social-link"><i class="fa-brands fa-github" id="git"></i>GitHub</a>
+            <a href="" class="social-link"><i class="fa-brands fa-instagram" id="ig"></i>@Gamer's Edge</a>
+            <a href="" class="social-link"><i class="fa-brands fa-linkedin" id="li"></i>@Gamer's Edge</a>
+        </div>
+    
+        <h1 class="h1-footer">Gamer's Edge</h1>
+        
+        <div class="contactanos">
+            <h1 class="contacto-footer">Contactanos</h1>
+            <a href="" class="contact-link"><i class="fa-brands fa-whatsapp" id="wh"></i>+54 9 11 9999-0000</a>
+            <a href="" class="contact-link"><i class="fa-regular fa-envelope" id="mail"></i>GamersEdge@gmail.com</a>
+            <p class="parrafo-footer">Copyright &copy; 2024 - Todos los derechos reservados</p>
+        </div>
+    </div>
+    
+    </footer>
+
 </body>
 </html>
