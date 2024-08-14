@@ -532,11 +532,6 @@ span.carousel-control-next-icon:hover, span.carousel-control-prev-icon:hover {
 }
 }
 
-input.form-control.me-2{
-    /* width: 200px; */
-}
-
-
 /* Media Query para TABLET */
 @media screen and (min-width: 902px) and (max-width: 991px) {
     .card {
