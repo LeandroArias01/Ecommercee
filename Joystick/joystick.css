@@ -15,7 +15,15 @@ body {
     font-size: 24px;
 }
 
+.nav-item {
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+}
 
+input.form-control.me-2{
+    width: 50%;
+}
 
 .dropdown-item {
     font-size: 20px;
@@ -61,9 +69,7 @@ color: rgb(151, 17, 17);
 
 .fa-solid.fa-cart-shopping{
     color: rgb(0, 255, 0);
-    position: absolute;
-    left: 70%;
-    top: 33%;
+
 }
 
 .fa-solid.fa-cart-shopping:hover{

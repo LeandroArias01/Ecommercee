@@ -245,6 +245,16 @@ i#mail.fa-regular.fa-envelope::before{
     font-size: 24px;
 }
 
+.nav-item {
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+}
+
+input.form-control.me-2{
+    width: 50%;
+}
+
 .dropdown-item {
     font-size: 20px;
 }
@@ -289,9 +299,7 @@ color: rgb(151, 17, 17);
 
 .fa-solid.fa-cart-shopping{
     color: rgb(0, 255, 0);
-    position: absolute;
-    left: 79%;
-    top: 33%;
+
 }
 
 .fa-solid.fa-cart-shopping:hover{
@@ -388,4 +396,25 @@ navbar.navbar-expand-lg.bg-body-tertiary{
     input.form-control.me-2 {
         width: 100%; /* Input ocupa todo el ancho en móviles */
     }
+}
+
+@media screen and (max-width: 901px) {
+    .fa-solid.fa-cart-shopping{
+        color: rgb(0, 255, 0);
+        position:absolute; 
+        left: 94%;
+        top: 81%;
+    }
+}
+
+
+@media screen and (min-width: 902px) and (max-width: 991px) {
+
+    .fa-solid.fa-cart-shopping {
+        color: rgb(0, 255, 0);
+        position: absolute;
+        left: 94%;
+        top: 81%;
+    }
+
 }

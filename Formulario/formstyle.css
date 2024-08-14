@@ -12,6 +12,16 @@ body {
     font-size: 24px;
 }
 
+.nav-item {
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+}
+
+input.form-control.me-2{
+    width: 50%;
+}
+
 .dropdown-item {
     font-size: 20px;
 }
@@ -50,9 +60,7 @@ body {
 
 .fa-solid.fa-cart-shopping {
     color: rgb(0, 255, 0);
-    position: absolute;
-    left: 70%;
-    top: 33%;
+
 }
 
 .fa-solid.fa-cart-shopping:hover {
@@ -291,5 +299,26 @@ select.categories {
         display: inline-block;
     }
 
+
+}
+
+@media screen and (max-width: 901px) {
+    .fa-solid.fa-cart-shopping{
+        color: rgb(0, 255, 0);
+        position:absolute; 
+        left: 94%;
+        top: 81%;
+    }
+}
+
+
+@media screen and (min-width: 902px) and (max-width: 991px) {
+
+    .fa-solid.fa-cart-shopping {
+        color: rgb(0, 255, 0);
+        position: absolute;
+        left: 94%;
+        top: 81%;
+    }
 
 }
