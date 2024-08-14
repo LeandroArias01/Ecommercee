@@ -3,6 +3,20 @@ body {
     background-color: #292c37;
 }
 
+#saludo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+}
+
 * {
     font-family: sans-serif;
     margin: 0;
