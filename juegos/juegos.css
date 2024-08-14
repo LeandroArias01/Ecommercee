@@ -98,7 +98,7 @@ div.games {
     align-items: center; /* Asegura que las tarjetas estén alineadas verticalmente en el centro */
     gap: 20px;
     padding-left: 140px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .games img {
@@ -308,16 +308,6 @@ i#mail.fa-regular.fa-envelope::before{
     font-size: 24px;
 }
 
-.nav-item {
-    font-size: 24px;
-    display: flex;
-    text-align: center;
-}
-
-input.form-control.me-2{
-    width: 50%;
-}
-
 .dropdown-item {
     font-size: 20px;
 }
@@ -362,7 +352,9 @@ color: rgb(151, 17, 17);
 
 .fa-solid.fa-cart-shopping{
     color: rgb(0, 255, 0);
-
+    position: absolute;
+    left: 79%;
+    top: 33%;
 }
 
 .fa-solid.fa-cart-shopping:hover{
@@ -394,267 +386,69 @@ navbar.navbar-expand-lg.bg-body-tertiary{
     margin-left: 100px;
 }
 
-/* Responsive */
-/* CELULAR */
-@media screen and (max-width: 901px) {
-    #games {
-        width: calc(100% - 40px); /* Full width with margin */
-        margin: 20px;
+/* Media queries para tabletas (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 200px; /* Ajusta el ancho de la tarjeta para tabletas */
+        margin: 10px;
+    }
+
+    div.col-md-4.mb-4 {
+        width: 50%; /* Ajusta el ancho de las columnas para tabletas */
+    }
+
+    .games {
+        flex-direction: column; /* Cambia la dirección del layout a columna en lugar de fila */
+    }
+
+    .container-card {
+        margin-left: 20px;
+    }
+
+    .nav-item {
+        font-size: 18px; /* Reduce el tamaño de la fuente en la barra de navegación */
+    }
+
+    input.form-control.me-2 {
+        width: 70%; /* Ajusta el tamaño del input en la barra de búsqueda */
+    }
+}
+
+/* Media queries para móviles (pantallas de hasta 480px) */
+@media (max-width: 480px) {
+    .card {
+        max-width: 300px; /* Ajusta el ancho de la tarjeta para móviles */
+        margin: 5px;
+        max-height: 500px;
+    }
+
+    div.col-md-4.mb-4 {
+        width: 100%; /* Las columnas ocupan todo el ancho en móviles */
+    }
+
+    .games {
+        position: relative;
+        left: 10%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        height: 450px; /* Ajusta la altura de la tarjeta */
-        text-align: center;
-        background-color: #292c37;
-        color: black;
-        border-radius: 5px;
-        border: 1px solid #b11623;
-        box-shadow: 0 0 50px #000;
-        overflow: hidden;
-        display: flex;
+        grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
-        justify-content: space-between;
-        transition: transform 0.3s ease, box-shadow 0.3s;
+         /* Layout en columna para mejor adaptación */
     }
 
-    footer {
+    .container-card {
+        margin-left: 0px;
+        padding: 10px;
+    }
+
+    .nav-item {
+        font-size: 16px; /* Reduce aún más el tamaño de la fuente en móviles */
+    }
+
+    navbar.navbar-expand-lg.bg-body-tertiary{
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        padding: 30px 50px; /* Ajuste en el padding */
-        background-color: #1b1d24; /* Fondo para el footer */
-    }
-    
-    .footer-title {
-        text-align: center;
-        font-size: 30px; /* Tamaño de fuente reducido */
-        font-weight: bold;
-        margin-bottom: 20px; /* Espacio abajo del título */
-    }
-    
-    div.titles{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
-    .h1-footer {
-        font-size: 30px; /* Tamaño de fuente reducido */
-        font-weight: bold;
-        margin-top: 30px;
+    input.form-control.me-2 {
+        width: 100%; /* Input ocupa todo el ancho en móviles */
     }
-    
-
-    
-    /* Social and Contact Links */
-    .social-link {
-        display: inline-block;
-        margin: 5px 0; /* Espacio entre los enlaces */
-        text-decoration: none;
-        color: rgb(206, 206, 206);
-    }
-    
-    .social-link i {
-        margin-right: 10px;
-    }
-    
-    .contacto-footer {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .contactanos {
-        text-align: center;
-    }
-    
-    .contact-link {
-        /* color: #cccc; */
-        text-decoration: none;
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    i#wh.fa-brands.fa-whatsapp::before{
-        margin-right: 5px;
-    }
-
-    i#mail.fa-regular.fa-envelope::before{
-        margin-right: 8px;
-    }
-    
-    .contact-link:last-child {
-        margin-bottom: 0;
-    }
-    
-    /* Footer Icons */
-    .footer-icons {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Alineación de los elementos */
-        margin-bottom: 20px; /* Espacio debajo de los íconos */
-    }
-    
-    .redes {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .redes-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centramos los elementos */
-    }
-    
-    #contacto {
-        background-color: #1b1d24;
-    }
-
-    img {
-        width: 100%;
-        height: auto; /* Asegura la proporción correcta */
-    }
-
-    i#wh.fa-brands.fa-whatsapp::before{
-        text-align: start;
-    }
-    
-    i#mail.fa-regular.fa-envelope::before{
-        text-align: start;
-    }
-    
-.fa-solid.fa-cart-shopping{
-    color: rgb(0, 255, 0);
-    position:absolute; 
-    left: 94%;
-    top: 81%;
-}
-}
-
-/* Media Query para TABLET */
-@media screen and (min-width: 902px) and (max-width: 991px) {
-    .card {
-        width: calc(50% - 40px); /* Dos cards por fila */
-    }
-
-    footer {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        color: rgb(165, 163, 163);
-        padding: 30px 50px; /* Ajuste en el padding */
-        background-color: #1b1d24; /* Fondo para el footer */
-    }
-
-    div.titles {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .footer-title {
-        font-size: 30px; /* Tamaño de fuente reducido */
-        font-weight: bold;
-        margin-bottom: 20px; /* Espacio abajo del título */
-    }
-
-    .h1-footer {
-        font-size: 30px; /* Tamaño de fuente reducido */
-        font-weight: bold;
-    }
-
-    /* Social and Contact Links */
-    .social-link {
-        display: inline-block;
-        margin: 5px 0; /* Espacio entre los enlaces */
-        text-decoration: none;
-        color: rgb(206, 206, 206);
-    }
-
-    .social-link i {
-        margin-right: 10px;
-    }
-
-    .contacto-footer {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .contactanos {
-        text-align: center;
-        margin: 0; /* Eliminamos el margen para mejor alineación */
-    }
-
-    .contact-link {
-        color: #cccc;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    i#wh.fa-brands.fa-whatsapp::before {
-        margin-right: 5px;
-        text-align: start;
-    }
-
-    i#mail.fa-regular.fa-envelope::before {
-        margin-right: 8px;
-        text-align: start;
-    }
-
-    .contact-link:last-child {
-        margin-bottom: 0;
-    }
-
-    /* Footer Icons */
-    .footer-icons {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 20px;
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .redes-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centramos los elementos */
-    }
-
-    #contacto {
-        background-color: #1b1d24;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    .fa-solid.fa-cart-shopping {
-        color: rgb(0, 255, 0);
-        position: absolute;
-        left: 94%;
-        top: 81%;
-    }
-}
-
-form.d-flex{
-    position: relative;
-    left: 0%;    
 }

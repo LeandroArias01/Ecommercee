@@ -11,6 +11,10 @@ body {
 }
 
 /* NAVBAR */
+.nav-container {
+    margin-bottom: 100px;
+}
+
 .nav-item {
     font-size: 24px;
     display: flex;

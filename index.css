@@ -48,6 +48,7 @@ h3{
 /* Cards */
 .card {
     margin: 20px; /* espacio entre las cards */
+    
     text-align: center;
     background-color: #292c37;
     color: black;
@@ -303,6 +304,7 @@ input.form-control.me-2{
     box-shadow: 0 0 50px 10px #000000;
     display: flex;
     align-items: center;
+    margin-top: 100px;
     justify-content: center;
 }
 
