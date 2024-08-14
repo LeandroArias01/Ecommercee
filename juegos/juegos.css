@@ -3,6 +3,7 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -11,10 +12,9 @@ body {
 
 /* Tarjetas */
 .card {
-    margin: 20px; /* espacio entre las cards */
-    height: 422px;
-    /* max-height: 406.5px; */
-    max-width: 250px; /* Ajusta el ancho de la card */
+    margin: 20px;
+    height: 450px; /* Ajusta la altura de la tarjeta */
+    width: 250px; /* Fija el ancho de la tarjeta */
     text-align: center;
     background-color: #292c37;
     color: black;
@@ -22,45 +22,104 @@ body {
     border: 1px solid #b11623;
     box-shadow: 0 0 50px #000;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s;
 }
 
 .card-body {
-    padding: 1rem; /* Ajusta el padding interno */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    color: #cccc; /* Color del texto */
+}
+
+.submit {
+    font-size: 15px;
+    background-color: #b11010;
+    color: rgb(204, 204, 204);
+    border-radius: 5px;
+    border-style: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+    align-self: center; /* Centra el botón */
+    white-space: nowrap;
+    display: block; /* Agrega esta propiedad */
+    
+
+}
+
+.submit:hover {
+    color: #fff;
+    background-color: #921018;
+}
+
+.submit:active {
+    background-color: rgb(56, 1, 1);
+    color: #cccccc;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
+.card-img-top {
+    height: 200px; /* Fija la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+}
+
+
 /* Sección de juegos */
 div.games {
     width: 100rem;
+
 }
 
 .games {
-    color: #cccc;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Asegura que las tarjetas estén alineadas verticalmente en el centro */
+    gap: 20px;
+    padding-left: 140px;
+    margin-top: 50px;
 }
 
 .games img {
-    height: auto;
-    padding: 0; /* Ajustado */
+    height: 150px; /* ajusta la altura de la imagen */
+    object-fit: cover; /* asegúrate de que la imagen se adapte al contenedor */
 }
+
 
 .games h4 {
     color: #cccc;
-    font-size: 20px;
+    font-size: 18px; /* ajusta el tamaño del título */
 }
 
 .games p {
     color: #cccc;
-    font-size: 14px;
+    font-size: 14px; /* ajusta el tamaño del texto */
 }
 
 .games button {
-    width: 147px;
-    height: 38px;
+    width: 120px; /* ajusta el ancho del botón */
+    height: 40px; /* ajusta la altura del botón */
     background-color: #b11010;
     color: rgb(204, 204, 204);
     border-radius: 5px;
@@ -71,6 +130,7 @@ div.games {
 .games button:hover {
     color: #fff;
     background-color: #921018;
+    
 }
 
 .games button:active {
@@ -82,6 +142,7 @@ div.games {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         flex-direction: column;
+
          /* Layout en columna para mejor adaptación */
 }
 
@@ -93,6 +154,8 @@ div.col-md-4.mb-4{
 div#games.games{
     width: 100%;
 }
+
+
 
 /* FOOTER */
 
