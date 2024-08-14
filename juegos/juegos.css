@@ -1,39 +1,145 @@
-body{
-    background-color: #292c37;
-}
-
+/* Estilo general */
 * {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
-.footer-icons {
+body {
+    background-color: #292c37;
+}
+
+/* Tarjetas */
+.card {
+    margin: 20px; /* espacio entre las cards */
+    height: 422px;
+    /* max-height: 406.5px; */
+    max-width: 250px; /* Ajusta el ancho de la card */
+    text-align: center;
+    background-color: #292c37;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #b11623;
+    box-shadow: 0 0 50px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.card-body {
+    padding: 1rem; /* Ajusta el padding interno */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de juegos */
+div.games {
+    width: 100rem;
+}
+
+.games {
+    color: #cccc;
+    display: grid;
+}
+
+.games img {
+    height: auto;
+    padding: 0; /* Ajustado */
+}
+
+.games h4 {
+    color: #cccc;
+    font-size: 20px;
+}
+
+.games p {
+    color: #cccc;
+    font-size: 14px;
+}
+
+.games button {
+    width: 147px;
+    height: 38px;
+    background-color: #b11010;
+    color: rgb(204, 204, 204);
+    border-radius: 5px;
+    border-style: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.games button:hover {
+    color: #fff;
+    background-color: #921018;
+}
+
+.games button:active {
+    background-color: rgb(56, 1, 1);
+    color: #cccccc;
+}
+
+#games {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        flex-direction: column;
+         /* Layout en columna para mejor adaptación */
+}
+
+div.col-md-4.mb-4{
+    width: 100%;
+    
+}
+
+div#games.games{
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background-color: #292c37;
+}
+
+h1{
+    color: #cccc;
+}
+
+p{
+    color: #cccccc69;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.h1-footer {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+div.titles{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-
-.redes {
-    text-align: left;
+.Copyright {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
 }
 
-
-.redes-footer {
-    display: flex;
-    align-items: start;
-}
-
-#contacto {
-    background-color: #1b1d24;
-}
-
+/* Social and Contact Links */
 .social-link {
-    display: block;
-    margin-bottom: 10px;
+    display: inline-block;
+    margin: 5px 0;
     text-decoration: none;
     color: rgb(206, 206, 206);
 }
@@ -43,172 +149,97 @@ body{
 }
 
 .contacto-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactanos {
+    text-align: center;
+    margin: 0;
+}
+
+.contact-link {
+    color: #cccc;
+    text-decoration: none;
+    display: block;
     margin-bottom: 10px;
 }
 
-.contactanos a {
-    text-decoration: none;
-    color: rgb(206, 206, 206);
+i#wh.fa-brands.fa-whatsapp::before{
+    margin-right: 5px;
 }
 
-div.contactanos{
-    margin-right: 60px;
-}
-
-.contacto-footer {
-    text-align: right; /* Alinea el texto a la derecha */
-    margin-bottom: 20px; /* Agrega espacio entre el texto y los enlaces */
-}
-
-.contact-link {
-    display: block; /* Crea un bloque para cada enlace */
-    margin-bottom: 10px; /* Agrega espacio entre los enlaces */
-    text-align: right; /* Alinea los enlaces a la derecha */
+i#mail.fa-regular.fa-envelope::before{
+    margin-right: 8px;
 }
 
 .contact-link:last-child {
-    margin-bottom: 0; /* Quita el margen inferior del último enlace */
+    margin-bottom: 0;
 }
 
-.contact-link {
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
     text-align: start;
 }
 
+.redes-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-#git {
+#contacto {
+    background-color: #1b1d24;
+}
+
+#git, #mail, #wh, #li{
     color: white;
     font-size: 25px;
 }
 
-#mail{
-    color: white;
+#ig{
     font-size: 25px;
-}
-
-#wh{
-    color: white;
-    font-size: 25px;
-    
 }
 
 #li{
-    color: white;
-    font-size: 25px;
-}
-
-#ig {
-    color: white;
-    font-size: 25px;
-}
-
-#git:hover {
-    color: #4078c0;
-}
-
-#mail:hover{
-    color: #ea4335;
-}
-
-#wh:hover{
-    color: #25d366;
-}
-
-#li:hover{
+    background-color: #fff;
     color: #0a66c2;
 }
 
-#ig:hover {
-    color: #fd1d1d;
-}
-
-.footer-title {
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.h1-footer {
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 45px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 80px;
-}
-
-
-
-footer {
-    /* position: absolute;
-    height: 40%;
-    top: 195%; */
-    width: 100%;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    text-align: center;
-    color: rgb(165, 163, 163);
-    padding: 50px;
-}
-
-.fa-brands.fa-whatsapp, .fa-regular.fa-envelope{
-margin-right: 10px;
-}
-
-@media screen and (max-width: 501px) {
-    /* para tablet */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
-
-    #contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .h1-footer {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 773px) {
+#ig{
     
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
-    #contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .h1-footer {
-        display: none;
-    }
-    .footer-icons {
-        justify-content: center; /* Centra los iconos */
-    }
-    .social-link {
-        margin: 0 auto; /* Centra los enlaces sociales */
-    }
-    .contact-link {
-        margin: 0 auto; /* Centra los enlaces de contacto */
-    }
+    background:radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf);
+        border-radius: 30%;
 }
+
+
+
+
+#mail {
+    color: #ff1500;
+}
+
+#wh {
+    color: #25d366;
+}
+
+
+
 /* NAVBAR */
 .nav-item {
     font-size: 24px;
@@ -259,7 +290,7 @@ color: rgb(151, 17, 17);
 .fa-solid.fa-cart-shopping{
     color: rgb(0, 255, 0);
     position: absolute;
-    left: 70%;
+    left: 79%;
     top: 33%;
 }
 
@@ -271,67 +302,90 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: white;
 }
 
-@media screen and (max-width: 991px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
+form.d-flex{
+    position: absolute;
+    left: 85%;    
 }
 
-
-@media screen and (min-width: 992px) {
-    footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
+input.form-control.me-2{
+    width: 50%;
+    
 }
 
-
-
-
-
-
-@media screen and (max-width:501px){
-    div.cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:773px){
-    div.cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:992px){
-    div.cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.footer-icons {
+navbar.navbar-expand-lg.bg-body-tertiary{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
+/* Contenedor de tarjetas */
+.container-card {
+    margin-left: 100px;
+}
 
-.redes {
-    text-align: left;
+/* Media queries para tabletas (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 200px; /* Ajusta el ancho de la tarjeta para tabletas */
+        margin: 10px;
+    }
+
+    div.col-md-4.mb-4 {
+        width: 50%; /* Ajusta el ancho de las columnas para tabletas */
+    }
+
+    .games {
+        flex-direction: column; /* Cambia la dirección del layout a columna en lugar de fila */
+    }
+
+    .container-card {
+        margin-left: 20px;
+    }
+
+    .nav-item {
+        font-size: 18px; /* Reduce el tamaño de la fuente en la barra de navegación */
+    }
+
+    input.form-control.me-2 {
+        width: 70%; /* Ajusta el tamaño del input en la barra de búsqueda */
+    }
+}
+
+/* Media queries para móviles (pantallas de hasta 480px) */
+@media (max-width: 480px) {
+    .card {
+        max-width: 300px; /* Ajusta el ancho de la tarjeta para móviles */
+        margin: 5px;
+        max-height: 500px;
+    }
+
+    div.col-md-4.mb-4 {
+        width: 100%; /* Las columnas ocupan todo el ancho en móviles */
+    }
+
+    .games {
+        position: relative;
+        left: 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+         /* Layout en columna para mejor adaptación */
+    }
+
+    .container-card {
+        margin-left: 0px;
+        padding: 10px;
+    }
+
+    .nav-item {
+        font-size: 16px; /* Reduce aún más el tamaño de la fuente en móviles */
+    }
+
+    navbar.navbar-expand-lg.bg-body-tertiary{
+        width: 100%;
+    }
+
+    input.form-control.me-2 {
+        width: 100%; /* Input ocupa todo el ancho en móviles */
+    }
 }

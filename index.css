@@ -1,4 +1,5 @@
-body{
+/* Global styles */
+body {
     background-color: #292c37;
 }
 
@@ -6,34 +7,105 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
-.footer-icons {
+img {
+    width: 100%;
+    height: auto; /* Cambiado a auto para mantener la proporción */
+}
+
+h3{
+    text-align: center;
+    color: #cccccc;
+    text-shadow: #000000;
+    font-size: 40px;
+}
+
+.card-title {
+    color: rgb(165, 163, 163);
+    font-size: 25px;
+}
+
+.card-text {
+    color: rgb(165, 163, 163);
+    font-size: 20px;
+}
+
+/* Cards */
+.card {
+    margin: 20px; /* espacio entre las cards */
+    text-align: center;
+    background-color: #292c37;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #b11623;
+    box-shadow: 0 0 50px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 280px;
+}
+
+.cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: start;
+    flex-wrap: wrap; /* Cambiado para que las cards se ajusten a diferentes tamaños */
+    gap: 15px;
+    justify-content: center;
 }
 
 
-.redes {
-    text-align: left;
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background-color: #292c37;
 }
 
+h1{
+    color: #cccc;
+}
 
-.redes-footer {
+p{
+    color: #cccccc69;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.h1-footer {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+div.titles{
+    width: 100%;
     display: flex;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#contacto {
-    background-color: #1b1d24;
+.Copyright {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
 }
 
+/* Social and Contact Links */
 .social-link {
-    display: block;
-    margin-bottom: 10px;
+    display: inline-block;
+    margin: 5px 0;
     text-decoration: none;
     color: rgb(206, 206, 206);
 }
@@ -43,172 +115,97 @@ body{
 }
 
 .contacto-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactanos {
+    text-align: center;
+    margin: 0;
+}
+
+.contact-link {
+    color: #cccc;
+    text-decoration: none;
+    display: block;
     margin-bottom: 10px;
 }
 
-.contactanos a {
-    text-decoration: none;
-    color: rgb(206, 206, 206);
+i#wh.fa-brands.fa-whatsapp::before{
+    margin-right: 5px;
 }
 
-div.contactanos{
-    margin-right: 60px;
-}
-
-.contacto-footer {
-    text-align: right; /* Alinea el texto a la derecha */
-    margin-bottom: 20px; /* Agrega espacio entre el texto y los enlaces */
-}
-
-.contact-link {
-    display: block; /* Crea un bloque para cada enlace */
-    margin-bottom: 10px; /* Agrega espacio entre los enlaces */
-    text-align: right; /* Alinea los enlaces a la derecha */
+i#mail.fa-regular.fa-envelope::before{
+    margin-right: 8px;
 }
 
 .contact-link:last-child {
-    margin-bottom: 0; /* Quita el margen inferior del último enlace */
+    margin-bottom: 0;
 }
 
-.contact-link {
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
     text-align: start;
 }
 
+.redes-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-#git {
+#contacto {
+    background-color: #1b1d24;
+}
+
+#git, #mail, #wh, #li{
     color: white;
     font-size: 25px;
 }
 
-#mail{
-    color: white;
+#ig{
     font-size: 25px;
-}
-
-#wh{
-    color: white;
-    font-size: 25px;
-    
 }
 
 #li{
-    color: white;
-    font-size: 25px;
-}
-
-#ig {
-    color: white;
-    font-size: 25px;
-}
-
-#git:hover {
-    color: #4078c0;
-}
-
-#mail:hover{
-    color: #ea4335;
-}
-
-#wh:hover{
-    color: #25d366;
-}
-
-#li:hover{
+    background-color: #fff;
     color: #0a66c2;
 }
 
-#ig:hover {
-    color: #fd1d1d;
-}
-
-.footer-title {
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.h1-footer {
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 45px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 80px;
-}
-
-
-
-footer {
-    /* position: absolute;
-    height: 40%;
-    top: 195%; */
-    width: 100%;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    text-align: center;
-    color: rgb(165, 163, 163);
-    padding: 50px;
-}
-
-.fa-brands.fa-whatsapp, .fa-regular.fa-envelope{
-margin-right: 10px;
-}
-
-@media screen and (max-width: 501px) {
-    /* para tablet */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
-
-    #contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .h1-footer {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 773px) {
+#ig{
     
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
-    #contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .h1-footer {
-        display: none;
-    }
-    .footer-icons {
-        justify-content: center; /* Centra los iconos */
-    }
-    .social-link {
-        margin: 0 auto; /* Centra los enlaces sociales */
-    }
-    .contact-link {
-        margin: 0 auto; /* Centra los enlaces de contacto */
-    }
+    background:radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf);
+        border-radius: 30%;
 }
+
+
+
+
+#mail {
+    color: #ff1500;
+}
+
+#wh {
+    color: #25d366;
+}
+
+
+
 /* NAVBAR */
 .nav-item {
     font-size: 24px;
@@ -259,7 +256,7 @@ color: rgb(151, 17, 17);
 .fa-solid.fa-cart-shopping{
     color: rgb(0, 255, 0);
     position: absolute;
-    left: 70%;
+    left: 79%;
     top: 33%;
 }
 
@@ -271,28 +268,23 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     color: white;
 }
 
-@media screen and (max-width: 991px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
+form.d-flex{
+    position: absolute;
+    left: 85%;    
 }
 
-
-@media screen and (min-width: 992px) {
-    footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: rgb(165, 163, 163);
-        margin-top: 50px;
-    }
+input.form-control.me-2{
+    width: 50%;
+    
 }
 
-/* CAROUSEL */
+navbar.navbar-expand-lg.bg-body-tertiary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARRUSEL */
 .carousel.slide{
     /* width: 100%; */
     margin-top: 70px;
@@ -304,178 +296,411 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     justify-content: center;
 }
 
-button.carousel-control-next{
+    
+    img {
+    width: 100%;
+    height: 500px;
+    }
+    
+    button.carousel-control-next, button.carousel-control-prev {
     width: 10%;
     height: 500px;
-    transition: background-color;
-    transition-duration: 0.4s;
+    transition: background-color 0.4s;
+    }
+    
+    button.carousel-control-next {
+    border-bottom-left-radius: 300px;
+    border-top-left-radius: 300px;
+    }
+    
+    button.carousel-control-prev {
+    border-bottom-right-radius: 300px;
+    border-top-right-radius: 300px;
+    }
+    
+    button.carousel-control-next:hover, button.carousel-control-prev:hover {
+    background-color: rgba(0, 0, 0, 0.315);
+    }
+    
+    div.carousel-indicators {
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    }
+    
+    span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    background-color: transparent;
+    }
+    
+    span.carousel-control-next-icon:hover, span.carousel-control-prev-icon:hover {
+    background-color: #00000030;
+    border-radius: 20px;
+    }
+
+    .carousel-item{
+    
+    box-shadow: 20px 20px 50px 5px #000000;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    }
+
+/* Responsive */
+/* CELULAR */
+@media screen and (max-width: 901px) {
+    .card {
+        width: calc(100% - 40px); /* Full width with margin */
+        margin: 20px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        color: rgb(165, 163, 163);
+        padding: 30px 50px; /* Ajuste en el padding */
+        background-color: #1b1d24; /* Fondo para el footer */
+    }
+    
+    .footer-title {
+        text-align: center;
+        font-size: 30px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        margin-bottom: 20px; /* Espacio abajo del título */
+    }
+    
+    div.titles{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .h1-footer {
+        font-size: 30px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    
+
+    
+    /* Social and Contact Links */
+    .social-link {
+        display: inline-block;
+        margin: 5px 0; /* Espacio entre los enlaces */
+        text-decoration: none;
+        color: rgb(206, 206, 206);
+    }
+    
+    .social-link i {
+        margin-right: 10px;
+    }
+    
+    .contacto-footer {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contactanos {
+        text-align: center;
+    }
+    
+    .contact-link {
+        /* color: #cccc; */
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    i#wh.fa-brands.fa-whatsapp::before{
+        margin-right: 5px;
+    }
+
+    i#mail.fa-regular.fa-envelope::before{
+        margin-right: 8px;
+    }
+    
+    .contact-link:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Footer Icons */
+    .footer-icons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Alineación de los elementos */
+        margin-bottom: 20px; /* Espacio debajo de los íconos */
+    }
+    
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .redes-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centramos los elementos */
+    }
+    
+    #contacto {
+        background-color: #1b1d24;
+    }
+
+    img {
+        width: 100%;
+        height: auto; /* Asegura la proporción correcta */
+    }
+
+    i#wh.fa-brands.fa-whatsapp::before{
+        text-align: start;
+    }
+    
+    i#mail.fa-regular.fa-envelope::before{
+        text-align: start;
+    }
+    /* Carousel */
+.carousel.slide {
+    margin-top: 70px;
+    margin-right: 0; /* Ajuste a 0 si es necesario */
+    margin-left: 0; /* Ajuste a 0 si es necesario */
+    box-shadow: 0 0 50px 10px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+button.carousel-control-next, button.carousel-control-prev {
+    width: 20%;
+    height: 100%;
+    transition: background-color 0.4s;
+}
+
+button.carousel-control-next {
     border-bottom-left-radius: 300px;
     border-top-left-radius: 300px;
 }
 
-button.carousel-control-prev{
-    width: 10%;
-    height: 500px;
-    transition: background-color;
-    transition-duration: 0.4s;
+button.carousel-control-prev {
     border-bottom-right-radius: 300px;
     border-top-right-radius: 300px;
 }
 
-button.carousel-control-next:hover{
+button.carousel-control-next:hover, button.carousel-control-prev:hover {
     background-color: rgba(0, 0, 0, 0.315);
-    border-bottom-left-radius: 300px;
-    border-top-left-radius: 300px;
 }
 
-button.carousel-control-prev:hover{
-    background-color: rgba(0, 0, 0, 0.315);
-    border-bottom-right-radius: 300px;
-    border-top-right-radius: 300px;
-}
-
-div.carousel-indicators{
+div.carousel-indicators {
     background-color: transparent;
     position: absolute;
     top: 100%;
 }
 
-span.carousel-control-next-icon{
-    margin-left: 40px;
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
     background-color: transparent;
 }
 
-span.carousel-control-prev-icon{
-    margin-right: 40px;
-    background-color: transparent;
-}
-
-span.carousel-control-next-icon:hover{
+span.carousel-control-next-icon:hover, span.carousel-control-prev-icon:hover {
     background-color: #00000030;
     border-radius: 20px;
 }
-
-span.carousel-control-prev-icon:hover{
-    background-color: #00000030;
-    border-radius: 20px;
-    
 }
 
-img{
+.fa-solid.fa-cart-shopping{
+    color: rgb(0, 255, 0);
+    position: relative;
+    left: 12%;
+    top: 0%;
+}
+
+/* form.d-flex{
+    position: relative;
+    left: 0%;    
+} */
+
+input.form-control.me-2{
+    /* width: 200px; */
+}
+
+
+/* TABLET */
+@media screen and (min-width: 902px) and (max-width: 1280px) {
+    .card {
+        width: calc(50% - 40px); /* Dos cards por fila */
+    }
+
+footer {
     width: 100%;
-    height: 500px;
-}
-
-
-.carousel-item{
-    box-shadow: 20px 20px 50px 5px #000000;
-    border-radius: 10px;
-    transition: transform 0.6s ease;
-}
-
-@media screen and (max-width:501px){
-    img{
-        width: 80%; /* ancho relativo */
-        margin: 20px auto; /* centrado */;
-    }
-}
-
-@media screen and (max-width:773px){
-    img{
-        width: 80%; /* ancho relativo */
-        margin: 20px auto; /* centrado */    }
-}
-
-@media screen and (max-width:992px){
-    img{
-        width: 80%; /* ancho relativo */
-        margin: 20px auto; /* centrado */    }
-}
-
-
-
-/* DESTACADOS */
-h3{
-    text-align: center;
-    color: #cccccc;
-    text-shadow: #000000;
-    font-size: 40px;
-}
-
-.card-title {
-    color: rgb(165, 163, 163);
-    font-size: 25px;
-}
-
-.card-text {
-    color: rgb(165, 163, 163);
-    font-size: 20px;
-}
-.card {
-    margin: 20px; /* espacio entre las cards */
-    text-align: center;
-    background-color: #292c37;
-    color: black;
-    border-radius: 5px ;
-    border: 1px solid #b11623;
-    box-shadow: 0 0 50px #000;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s;
-}
-
-.card:hover{
-    transform:  scale(1.05);
-}
-.container-card {
-    margin-left: 100px;
-}
-
-.card-img-top{
-    height: 280px;
-}
-
-.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-}
-
-@media screen and (max-width:501px){
-    div.cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:773px){
-    div.cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:992px){
-    div.cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.footer-icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    color: rgb(165, 163, 163);
+    padding: 30px 50px; /* Ajuste en el padding */
+    background-color: #1b1d24; /* Fondo para el footer */
+}
+
+div.titles{
+    width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 30px; /* Tamaño de fuente reducido */
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacio abajo del título */
+}
+
+.h1-footer {
+    font-size: 30px; /* Tamaño de fuente reducido */
+    font-weight: bold;
 }
 
 
+
+/* Social and Contact Links */
+.social-link {
+    display: inline-block;
+    margin: 5px 0; /* Espacio entre los enlaces */
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+
+.contacto-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactanos {
+    text-align: center;
+    margin: 0; /* Eliminamos el margen para mejor alineación */
+}
+
+.contact-link {
+    color: #cccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+i#wh.fa-brands.fa-whatsapp::before{
+    margin-right: 5px;
+}
+
+i#mail.fa-regular.fa-envelope::before{
+    margin-right: 8px;
+}
+
+.contact-link:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer Icons */
+.footer-icons {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
 .redes {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.redes-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos los elementos */
+}
+
+#contacto {
+    background-color: #1b1d24;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+i#wh.fa-brands.fa-whatsapp::before{
+    text-align: start;
+}
+
+i#mail.fa-regular.fa-envelope::before{
+    text-align: start;
+}
+
+/* Carousel */
+.carousel.slide {
+margin-top: 70px;
+margin-right: 0; /* Ajuste a 0 si es necesario */
+margin-left: 0; /* Ajuste a 0 si es necesario */
+box-shadow: 0 0 50px 10px #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.carousel-inner img {
+width: 100%;
+height: auto; /* Mantiene la proporción de la imagen */
+}
+
+button.carousel-control-next, button.carousel-control-prev {
+width: 20%;
+height: 100%;
+transition: background-color 0.4s;
+}
+
+button.carousel-control-next {
+border-bottom-left-radius: 300px;
+border-top-left-radius: 300px;
+}
+
+button.carousel-control-prev {
+border-bottom-right-radius: 300px;
+border-top-right-radius: 300px;
+}
+
+button.carousel-control-next:hover, button.carousel-control-prev:hover {
+background-color: rgba(0, 0, 0, 0.315);
+}
+
+div.carousel-indicators {
+background-color: transparent;
+position: absolute;
+top: 100%;
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+background-color: transparent;
+}
+
+span.carousel-control-next-icon:hover, span.carousel-control-prev-icon:hover {
+background-color: #00000030;
+border-radius: 20px;
+}
+}
+
+form.d-flex{
+    position: relative;
+    left: 0%;    
 }

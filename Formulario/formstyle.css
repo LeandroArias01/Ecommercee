@@ -1,4 +1,5 @@
-body{
+/* GLOBAL STYLES */
+body {
     background-color: #292c37;
     font-family: Arial, Helvetica, sans-serif;
     color: #cccccc;
@@ -27,48 +28,43 @@ body{
     border-color: transparent;
 }
 
-.btn.btn-outline-success:active{
-    background-color: #64080e;
-    outline: none;
-    border: none;
-}
-
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: #9f111a3a;
 }
 
-.fa-solid.fa-house{
+.nav-item.dropdown {
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+.fa-solid.fa-house {
     color: #ff0000;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 30px;
 }
 
-.fa-solid.fa-house:hover{
-color: rgb(151, 17, 17);
+.fa-solid.fa-house:hover {
+    color: rgb(151, 17, 17);
 }
 
-.nav-item.dropdown{
-    margin-left: 40px;
-    margin-right: 80px;
-}
-
-.fa-solid.fa-cart-shopping{
+.fa-solid.fa-cart-shopping {
     color: rgb(0, 255, 0);
     position: absolute;
     left: 70%;
     top: 33%;
 }
 
-.fa-solid.fa-cart-shopping:hover{
+.fa-solid.fa-cart-shopping:hover {
     color: rgb(32, 175, 32);
 }
 
-a.nav-link.dropdown-toogle:hover, .nav-link:hover{
+a.nav-link.dropdown-toogle:hover, .nav-link:hover {
     color: white;
 }
 
-.form-container{
+/* FORM STYLES */
+.form-container {
     background-color: #292c37;
     width: 50%;
     height: 60%;
@@ -77,10 +73,10 @@ a.nav-link.dropdown-toogle:hover, .nav-link:hover{
     border-radius: 20px;
     box-shadow: 0 0 50px 22px #000000;
     position: absolute;
-    right: 25% ;
+    right: 25%;
 }
 
-h1{
+h1 {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -88,53 +84,14 @@ h1{
     top: 1.99%;
 }
 
-div.product{
-    width: 100%;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-div.category{
-    width: 100%;
-    margin-bottom: 1.5rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-div.brand{
-    width: 100%;
-    margin-bottom: 1.5rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-div.price{
-    width: 100%;
-    margin-bottom: 1.5rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-div.sumbit{
-    width: 100%;
-    margin-top: 16px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.form-add{
+.form-add {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
+
+/* FORM ELEMENTS */
 
 /* LABELS */
 label{
@@ -170,116 +127,169 @@ label{
     bottom: 39%;
 }
 
-/* INPUTS */
-select.categories{
+
+div.product, div.category, div.brand, div.price, div.sumbit {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+div.product { margin-top: 0.5rem; }
+div.sumbit { margin-top: 16px; }
+
+select.categories, .product-name, .brandI, .priceI, .stockI {
     background-color: #cccccc;
     width: 90%;
     height: 5%;
-    margin-bottom: 0.5rem;
-    text-align: center;
     border-style: none;
     border-radius: 3px;
     position: absolute;
+}
+
+select.categories {
+    margin-bottom: 0.5rem;
     left: 5%;
     bottom: 20%;
 }
 
-.product-name{
-    background-color: #cccccc;
-    width: 90%;
-    height: 5%;
+.product-name {
     margin-bottom: 6.5rem;
-    border-style: none;
-    border-radius: 3px;
-    position: absolute;
     left: 5%;
     top: 22%;
-
 }
 
-.brandI{
-    background-color: #cccccc;
-    width: 90%;
-    height: 5%;
-    border-radius: 3px;
-    border-style: none;
-    position: absolute;
+.brandI, .priceI, .stockI {
     left: 5%;
-    bottom: 60%;
 }
 
-.priceI{
-    background-color: #cccccc;
-    width: 90%;
-    height: 5%;
-    border-style: none;
-    border-radius: 3px;
-    position: absolute;
-    left: 5%;
-    top: 48%;
+.brandI { 
+    bottom: 60%; 
+}
+.priceI { 
+    top: 48%; 
+}
+.stockI { 
+    top: 61%; 
 }
 
-.stockI{
-    background-color: #cccccc;
-    width: 90%;
-    height: 5%;
-    border-style: none;
-    border-radius: 3px;
-    position: absolute;
-    left: 5%;
-    top: 61%;
-}
-.sumbitB{
+.sumbitB {
     background-color: #b11010;
     color: rgb(204, 204, 204);
     height: 6%;
     border-radius: 10px;
     border-style: none;
-    transition: background-color, color;
-    transition-duration: 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     position: absolute;
     bottom: 8%;
 }
 
-.product-name:focus, .stockI:focus, .brandI:focus, .priceI:focus, select:focus{
+.product-name:focus, .stockI:focus, .brandI:focus, .priceI:focus, select:focus {
     outline: none;
 }
 
-
-
-.sumbitB:hover{
+.sumbitB:hover {
     background-color: rgb(82, 0, 0);
     color: #cccccc;
 }
 
-.sumbitB:active{
+.sumbitB:active {
     background-color: rgb(56, 1, 1);
     color: #cccccc;
 }
 
-@media screen and (max-width:501px) {
-    body{
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 501px) {
+    body {
         font-size: 15px;
     }
-}
 
-@media screen and (max-width:1024px) {
-    body{
-        font-size: 30px;
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .mas-cards {
+        display: none;
+    }
+
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1-footer {
+        display: none;
     }
 }
 
+@media screen and (max-width: 773px) {
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
 
 
-footer {
-    /* position: absolute;
-    height: 40%;
-    top: 195%; */
-    width: 100%;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    text-align: center;
-    color: rgb(165, 163, 163);
-    padding: 50px;
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1-footer {
+        display: none;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .social-link, .contact-link {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        width: calc(45% - 40px);
+        margin: 20px;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .container-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        width: calc(20% - 40px);
+        margin: 20px;
+        display: inline-block;
+    }
+
+
 }
